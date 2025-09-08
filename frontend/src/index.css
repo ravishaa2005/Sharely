@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+* {
+    font-family: 'Urbanist', sans-serif;
+}
+
+@layer base {
+    body {
+        background-color: #fcfbfc;
+        overflow-y: hidden;
+    }
+}
+
+.input-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 0.75rem;
+    font-size: 0.875rem;
+    color: #374151;
+    background-color: #f9fafb;
+    border-radius: 0.375rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    margin-bottom: 1rem;
+    margin-top: 0.75rem;
+    border: 1px solid #e5e7eb;
+    outline: none;
+}
+
+.btn-primary {
+    width: 100%;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #fff;
+    background-color: #4c1d95;
+    box-shadow: 0 10px 15px -3px rgba(109, 40, 217, 0.2);
+    padding: 10px;
+    border-radius: 0.375rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+    transition: background-color 0.2s, box-shadow 0.2s;
+}
+.btn-primary:hover {
+    background-color: #7c3aed;
+    box-shadow: 0 10px 15px -3px rgba(76, 29, 149, 0.3);
+}
+
+.card {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 15px -3px rgba(243, 244, 246, 0.5);
+    border: 1px solid #f3f4f6;
+}
+
+.landing-page {
+    overflow-y: auto;
+    height: 100vh;
+}
+
+.landing-page-content {
+    overflow: visible;
+}
+
+.card-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 12px;
+    font-weight: 500;
+    color: #4b5563;
+    background-color: #f9fafb;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.75rem;
+    border: 1px solid rgba(209, 213, 219, 0.5);
+    cursor: pointer;
+    transition: color 0.2s, background-color 0.2s;
+}
+.card-btn:hover {
+    color: #7c3aed;
+    background-color: #f3e8ff;
+}
+
+.add-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.375rem; 
+    font-size: 0.75rem;
+    font-weight: 500; 
+    color: #15803d; 
+    white-space: nowrap;
+    background-color: #ecfdf5; 
+    border: 1px solid #bbf7d0; 
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem; 
+    cursor: pointer;
+}
+@media (min-width: 768px) {
+    .add-btn {
+        font-size: 0.875rem;
+    }
+}
+
+.add-btn-fill {
+    color: #fff;
+    background-color: #9333ea;
+}
